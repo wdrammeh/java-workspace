@@ -1,4 +1,4 @@
-package serial;
+package serial.types;
 
 import java.io.Serializable;
 
@@ -15,12 +15,17 @@ import java.io.Serializable;
 public class Employee implements Serializable {
     public String name;
     public String address;
-    public int SSN;
-    public int number;
+    public int ssn;
+    public Telephone telephone;
+    public int age;
 
 
-    public void mailCheck(){
-        System.out.println("Mailing a check to "+this.name+" "+this.address);
+    public Employee(String name, String address, int ssn, Telephone telephone, int age) {
+        this.name = name;
+        this.address = address;
+        this.ssn = ssn;
+        this.telephone = telephone;
+        this.age = age;
     }
 
 }

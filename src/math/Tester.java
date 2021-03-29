@@ -4,7 +4,6 @@ import math.arithmetic.Arithmetic;
 
 public class Tester {
 
-
     public static void main(String[] args) {
         Arithmetic.launchCompleteLinearPropagationForGCD(60, 35);
     }

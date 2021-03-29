@@ -1,5 +1,7 @@
 package math.arithmetic;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -106,7 +108,7 @@ public class Arithmetic {
         return sum;
     }
 
-    //step-sizing is 1, by default
+    // step-sizing is 1, by default
     public static int sumOfTerms(int from, int to){
         return (from == 0 || from == 1) ? firstNTerms(to) : sumOfTerms(from, to, 1);
     }
@@ -363,6 +365,40 @@ public class Arithmetic {
         }
 
         return dMin;
+    }
+
+    public static double round(double value, int places) {
+        if (places < 0){
+            throw new IllegalArgumentException();
+        }
+
+        BigDecimal bd = BigDecimal.valueOf(value);
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
+    }
+
+    public static int convertDenaryToBinary(int n){
+        if (n == 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        }
+
+        final ArrayList<Integer> list = new ArrayList<>();
+        int q = n/2;
+        while (q != 0) {
+            int r = n - 2 * q;
+            list.add(r);
+            n = q;
+            q /= 2;
+        }
+        list.add(1);
+        final StringBuilder builder = new StringBuilder(list.size());
+        for (int i = list.size() - 1; i >= 0; i--) {
+            builder.append(list.get(i));
+        }
+        final String string = builder.substring(0, list.size());
+        return Integer.parseInt(string);
     }
 
 }

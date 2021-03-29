@@ -9,10 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import javax.swing.*;
 import java.util.List;
 
-/*
-e:msjallowft@gmail.com
-p:Mahmudu 83
- */
 public class Test4_LoginPlusDetails {
     private static String email = "21712494@utg.edu.gm";
     private static String password = "21712494";
