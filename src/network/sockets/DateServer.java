@@ -26,8 +26,9 @@ public class DateServer {
 //                listening to connections
 //                client.close();
             }
-        }catch (IOException ioe){
+        } catch (IOException ioe){
             System.err.println(ioe);
         }
     }
+    
 }

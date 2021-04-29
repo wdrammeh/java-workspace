@@ -14,7 +14,7 @@ import java.util.List;
 
 
 public class Test8_CGPA {
-    private static final int MAT_NUMBER = 21612105;//21712133,
+    private static final int MAT_NUMBER = 1234_5678;
     private static FirefoxDriver driver;
     private static WebDriverWait loadWaiter;
     private static ArrayList<Temp_JustAllCourses> arrayList = new ArrayList<>();

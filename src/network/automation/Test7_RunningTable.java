@@ -14,7 +14,7 @@ import java.util.List;
 
 
 public class Test7_RunningTable {
-    private static final int MAT_NUMBER = 21712494;
+    private static final int MAT_NUMBER = 1234_5678;
     private static final String THIS_SEMESTER = "2018/2019 Second Semester";
     private static FirefoxDriver driver;
     private static WebDriverWait loadWaiter;

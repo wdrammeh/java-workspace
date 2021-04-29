@@ -25,8 +25,8 @@ public class Test5_AllEnteredCourses {
 
         driver.navigate().to("https://www.utg.gm/login");
 
-        driver.findElement(By.name("email")).sendKeys("21712494@utg.edu.gm");
-        driver.findElement(By.name("password")).sendKeys("21712494");
+        driver.findElement(By.name("email")).sendKeys("address@utg.edu.gm");
+        driver.findElement(By.name("password")).sendKeys("<psswd-keys>");
 
         driver.findElement(By.className("form-group")).submit();
 
@@ -109,5 +109,3 @@ public class Test5_AllEnteredCourses {
     }
 
 }
-
-

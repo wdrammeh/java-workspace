@@ -18,10 +18,10 @@ public class Test6_Notices {
         driver.navigate().to("https://www.utg.gm/login");
 
         WebElement usernameElement = driver.findElement(By.name("email"));
-        usernameElement.sendKeys("21712494@utg.edu.gm");
+        usernameElement.sendKeys("mail@utg.edu.gm");
 
         WebElement passwordElement = driver.findElement(By.name("password"));
-        passwordElement.sendKeys("21712494");
+        passwordElement.sendKeys("<psswd>");
 
         WebElement formElement = driver.findElement(By.className("form-group"));
         formElement.submit();

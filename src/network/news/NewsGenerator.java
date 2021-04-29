@@ -18,7 +18,6 @@ public class NewsGenerator {
 
             for(Element e : elements){
                 System.out.println(e.select("h2.entry-title").text());
-
                 System.out.println(e.getElementsByTag("p").text());
             }
 

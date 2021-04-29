@@ -14,8 +14,8 @@ import java.util.Properties;
 public class JavaSendEmail {
 
     public static void main(String [] args){
-        String from = "md21712494@utg.edu.gm";
-        String to = "wakadrammeh@gmail.com";
+        String from = "email@example.com";
+        String to = "another-email@example.com";
         String host = "localhost";//or IP address
 
         //Get the session object

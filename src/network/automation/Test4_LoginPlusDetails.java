@@ -10,8 +10,8 @@ import javax.swing.*;
 import java.util.List;
 
 public class Test4_LoginPlusDetails {
-    private static String email = "21712494@utg.edu.gm";
-    private static String password = "21712494";
+    private static String email = "address@utg.edu.gm";
+    private static String password = "<password>";
     private static FirefoxDriver driver;
     private static String name,major,program,emil,fn,ln,school,address,tel,mStatus,dob,nationality,dept;
     private static int moa;

@@ -12,7 +12,7 @@ public class Mailer{
 
     public static void main(String[] args) {
         final String msgText = "Hello W, this is test of the Dashboard Project.\nHere comes another line";
-        send("wakadrammeh@gmail.com","wdrammeh20","md21712494@utg.edu.gm","Dashboard Project - Mail Test",msgText);
+        send("<email>","<password>","wakadrammeh@gmail.com","Dashboard Project - Mail Test",msgText);
         //change from, password and to
     }
 

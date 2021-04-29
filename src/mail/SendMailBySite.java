@@ -9,9 +9,9 @@ public class SendMailBySite {
 
     public static void main(String[] args) {
         final String host = "mail.javatpoint.com";
-        final String user = "wakadrammeh@gmail.com";
-        final String password = "wdrammeh20";
-        final String to = "md21712494@utg.edu.gm";
+        final String user = "<user-mail>";
+        final String password = "<psswd>";
+        final String to = "wakadrammeh@gmail.com";
 
         //Get the session object
         final Properties props = new Properties();

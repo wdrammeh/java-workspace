@@ -13,10 +13,10 @@ public class SendEmail {
 
     public static void main(String [] args) {
         // Sender's email ID needs to be mentioned
-        final String from = "wakadrammeh@gmail.com";
-        final String pass ="wdrammeh20";
+        final String from = "address@gmail.com";
+        final String pass ="<psswd>";
         // Recipient's email ID needs to be mentioned.
-        final String to = "mydashboardutg@gmail.com";
+        final String to = "email@example.com";
         final String host = "smtp.gmail.com";
 
         // Get system properties
