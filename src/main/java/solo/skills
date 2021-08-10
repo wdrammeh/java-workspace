@@ -1,0 +1,26 @@
+#What a community!
+
+#The linkedlist is better in manipulating data- making numerous inserts and
+	deletes.
+------------Notice, they're very much similar!
+#In the other hand, ArrayList is better for storing and accessing data, as it 
+	is similar to a normal array.
+
+#HashMaps provide the same functionality as above, but in pairs.
+
+#So how they differ from the HashSet?
+
+#So nice to use, the methods in the Collections Class are static.
+	Its sort method can be called on integers as well.
+
+#Each time you invoked the .next method, the iterator advances to the next element
+	in the list.
+	
+#The 'for loop', or most especially, 'the for-each loop' deals with Arrays
+as 'while loops' deals with Iterators.
+
+#The constructor of the Scanner class can take a File object as a parameter.
+
+#The final: Final data cannot be changed
+			final methods cannot be overridden
+			final classes cannot be sub-classed!
