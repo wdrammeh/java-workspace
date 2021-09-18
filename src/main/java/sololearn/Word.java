@@ -1,4 +1,4 @@
-package solo;
+package sololearn;
 
 public class Word {
 	private int length, numberOfSpaces, numberOfUpperCases, numberOfLowerCases, numberOfWholeNumbers;

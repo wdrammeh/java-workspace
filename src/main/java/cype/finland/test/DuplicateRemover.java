@@ -1,6 +1,4 @@
-package cype.finland.test.q2;
-
-import cype.finland.test.q3.DuplicateRemover2;
+package cype.finland.test;
 
 import java.util.HashSet;
 import java.util.Set;

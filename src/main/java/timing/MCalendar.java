@@ -36,7 +36,7 @@ public class MCalendar {
 
 //        specific date-formats
         final DateFormat tf = SimpleDateFormat.getTimeInstance(DateFormat.SHORT);
-        final DateFormat df = SimpleDateFormat.getDateInstance(DateFormat.SHORT);
+        final DateFormat df = SimpleDateFormat.getDateInstance(DateFormat.DEFAULT, Locale.US);
         System.out.println(tf.format(new Date()));
         System.out.println(df.format(new Date()));
     }

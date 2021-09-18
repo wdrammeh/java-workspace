@@ -1,4 +1,4 @@
-package cype.finland.test.q3;
+package cype.finland.test;
 
 import java.util.StringJoiner;
 

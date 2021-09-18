@@ -1,4 +1,4 @@
-package solo;
+package sololearn;
 
 import java.util.LinkedHashSet;
 

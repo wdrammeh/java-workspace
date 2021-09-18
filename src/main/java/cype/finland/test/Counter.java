@@ -1,4 +1,4 @@
-package cype.finland.test.q4;
+package cype.finland.test;
 
 import java.util.Scanner;
 

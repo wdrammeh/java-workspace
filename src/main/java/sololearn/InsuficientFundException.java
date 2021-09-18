@@ -1,4 +1,4 @@
-package solo;
+package sololearn;
 
 public class InsuficientFundException extends RuntimeException {
 	

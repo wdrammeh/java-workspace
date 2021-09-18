@@ -6,7 +6,7 @@
     call as to which constructor they want to infer.
 3.  In a case where the super class defines the default constructor out of multiple other
     constructors present, to avoid a particular sub-constructor from auto calling it,
-    invoke the super(#), specifying  which constructor to be called, otherwise, the default
+    invoke the super(Type...), specifying  which constructor to be called, otherwise, the default
     comes in play.
 
 # Abstract classes are intended to be extended; and where extended all abstract methods
