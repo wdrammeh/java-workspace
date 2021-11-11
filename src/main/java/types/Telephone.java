@@ -1,4 +1,4 @@
-package serial.types;
+package types;
 
 public class Telephone {
     int code;

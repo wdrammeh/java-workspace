@@ -1,6 +1,6 @@
 package algo.sort;
 
-import utility.ArrayUtility;
+import utils.ArrayUtility;
 
 import java.util.Arrays;
 

@@ -1,13 +1,13 @@
 package algo.sort;
 
-import utility.ArrayUtility;
+import utils.ArrayUtility;
 
 import java.util.Arrays;
 
 /**
  * Implements the Bubble Sort Algorithm.
- * In each iteration, the 2-consecutive values are compared,
- * and swapped if necessary.
+ * In each iteration, the 2-consecutive values are compared
+ * and swapped, if necessary.
  * Time complexity: O(n-square)
  */
 public class BubbleSort {

@@ -1,4 +1,4 @@
-package serial.types;
+package types;
 
 import java.io.Serializable;
 
