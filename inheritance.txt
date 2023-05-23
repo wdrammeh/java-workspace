@@ -10,5 +10,6 @@
     comes in play.
 
 # Abstract classes are intended to be extended; and where extended all abstract methods
-must be implemented.
+must be implemented, unless of course, where the implementing type is itself abstract.
+
 # Interfaces are entirely abstract.
