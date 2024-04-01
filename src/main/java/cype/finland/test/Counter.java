@@ -18,7 +18,7 @@ public class Counter {
      * Calculates and prints the number of distinct vowels and consonants
      * that made up the given text.
      * This means, every vowel and consonant is calculated only once
-     * if though it may appear multiple times.
+     * even though it may appear multiple times.
      * The calculation is done simultaneously to save time.
      */
     public static void main(String[] args) {

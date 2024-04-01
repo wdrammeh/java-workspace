@@ -12,6 +12,9 @@ import java.util.List;
  */
 public class Arithmetic {
 
+    public static void main(String[] args) {
+        launchEuclidAlgorithmForGCD(1_587_645,6_755);
+    }
 
     public static int sum(int ... ints){
         int sum = 0;
@@ -194,7 +197,7 @@ public class Arithmetic {
 
     /**
      * The linear combination of 'n' with respect to 'd' as the divisor.
-     * This is based on the Euclid'd Division Theorem: n = d(q) + r
+     * This is based on the Euclid's Division Theorem: n = d(q) + r
      */
     public static String linearCombinationOf(int n, int d){
         int q = n / d;
