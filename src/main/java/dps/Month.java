@@ -2,6 +2,7 @@ package dps;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.StringJoiner;
 
 public class Month {
     private String name;
@@ -134,6 +135,19 @@ public class Month {
             }
         }
         return total;
+    }
+
+    public String getStatement() {
+        final StringJoiner joiner = new StringJoiner("\n");
+        joiner.add(String.format("[ %s ]", getDisplayName()))
+                .add(String.format("Total Revenue: %s", totalRevenue()))
+                .add(String.format("Rent: %s", getRent()))
+                .add(String.format("Cash Power: %s", totalCashPowerCost()))
+                .add(String.format("Wage: %s", wage()))
+                .add(String.format("Total Expense: %s", totalExpense()))
+                .add(String.format("Net Profit: %s", netProfit()))
+                .add("");
+        return joiner.toString();
     }
 
 }
