@@ -1,4 +1,4 @@
-package dps;
+package dps3;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -109,11 +109,11 @@ public class Month {
     }
 
     public double totalExpense() {
-        return totalDailyOutflow() + totalExtraOutflow();
+        return rent + wage() + totalDailyOutflow() + totalExtraOutflow();
     }
 
     public double netProfit() {
-        return totalRevenue() - totalExpense() - rent - wage();
+        return totalRevenue() - totalExpense();
     }
 
     public String getDisplayName() {
@@ -137,14 +137,19 @@ public class Month {
         return total;
     }
 
+    public double avgDailyInflow() {
+        return Utils.round(totalRevenue() / days.size(), 2);
+    }
+
     public String getStatement() {
         final StringJoiner joiner = new StringJoiner("\n");
         joiner.add(String.format("[ %s ]", getDisplayName()))
                 .add(String.format("Total Revenue: %s", totalRevenue()))
-                .add(String.format("Rent: %s", getRent()))
+                .add(String.format("Rent Fee: %s", getRent()))
                 .add(String.format("Cash Power: %s", totalCashPowerCost()))
-                .add(String.format("Wage: %s", wage()))
+                .add(String.format("Wage (%s): %s", wagePercentage, wage()))
                 .add(String.format("Total Expense: %s", totalExpense()))
+                // .add(String.format("Avg. Daily Income: %s", avgDailyInflow()))
                 .add(String.format("Net Profit: %s", netProfit()))
                 .add("");
         return joiner.toString();

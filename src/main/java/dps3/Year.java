@@ -1,4 +1,4 @@
-package dps;
+package dps3;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -112,7 +112,7 @@ public class Year {
     }
 
     public double netProfit() {
-        return totalRevenue() - totalExpense() - totalMonthlyRent() - totalMonthlyWage();
+        return totalRevenue() - totalExpense();
     }
 
     public String getStatement() {

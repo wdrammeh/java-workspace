@@ -1,11 +1,11 @@
-package dps;
+package dps3;
 
-public class Outflow {
+public class Inflow {
     private String name;
     private int amount;
 
     
-    public Outflow(String name, int amount) {
+    public Inflow(String name, int amount) {
         this.name = name;
         this.amount = amount;
     }

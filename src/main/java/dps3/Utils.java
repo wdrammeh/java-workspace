@@ -1,5 +1,7 @@
-package dps;
+package dps3;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -14,6 +16,15 @@ public class Utils {
     public static Date getDate() {
         Calendar cal = Calendar.getInstance();
         return getDate(cal.get(Calendar.YEAR), (cal.get(Calendar.MONTH) + 1), cal.get(Calendar.DAY_OF_MONTH));
+    }
+
+    public static double round(double value, int places) {
+        if (places < 0) {
+            throw new IllegalArgumentException();
+        }
+
+        final BigDecimal bigDecimal = BigDecimal.valueOf(value);
+        return bigDecimal.setScale(places, RoundingMode.HALF_UP).doubleValue();
     }
 
 }

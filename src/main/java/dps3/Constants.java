@@ -1,4 +1,4 @@
-package dps;
+package dps3;
 
 public class Constants {
     public static final String GAME = "Game";

@@ -1,9 +1,7 @@
-package dps;
+package dps3;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Date;
 
 public class Day {
     private int number;
