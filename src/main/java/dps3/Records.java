@@ -2,6 +2,41 @@ package dps3;
 
 public class Records {
 
+    public static void addJunData(Month month) {
+        month.setDays(
+            Day.on(month, 1).setDefaultInflow(330),
+            Day.on(month, 2).setDefaultInflow(315),
+            Day.on(month, 3).setDefaultInflow(340),
+            Day.on(month, 4).setDefaultInflow(230),
+            // Day.on(month, 5).setDefaultInflow(),
+            Day.on(month, 6).setDefaultInflow(370),
+            Day.on(month, 7).setDefaultInflow(190),
+            Day.on(month, 8).setDefaultInflow(410),
+            Day.on(month, 9).setDefaultInflow(265).setDefaultOutflow(500),
+            Day.on(month, 10).setDefaultInflow(240),
+            Day.on(month, 11).setDefaultInflow(360),
+            Day.on(month, 12).setDefaultInflow(210),
+            Day.on(month, 13).setDefaultInflow(300),
+            Day.on(month, 14).setDefaultInflow(220),
+            Day.on(month, 15).setDefaultInflow(300),
+            Day.on(month, 16).setDefaultInflow(270),
+            Day.on(month, 17).setDefaultInflow(385),
+            Day.on(month, 18).setDefaultInflow(455),
+            Day.on(month, 19).setDefaultInflow(605),
+            Day.on(month, 20).setDefaultInflow(530),
+            Day.on(month, 21).setDefaultInflow(415).setDefaultOutflow(500),
+            Day.on(month, 22).setDefaultInflow(420),
+            Day.on(month, 23).setDefaultInflow(325),
+            Day.on(month, 24).setDefaultInflow(325),
+            Day.on(month, 25).setDefaultInflow(220),
+            Day.on(month, 26).setDefaultInflow(320),
+            Day.on(month, 27).setDefaultInflow(240),
+            Day.on(month, 28).setDefaultInflow(370),
+            Day.on(month, 29).setDefaultInflow(370),
+            Day.on(month, 30).setDefaultInflow(300).setDefaultOutflow(500)
+        );
+    }
+
     public static void addMayData(Month month) {
         month.setDays(
             Day.on(month, 1).setDefaultInflow(435),
@@ -29,7 +64,12 @@ public class Records {
             Day.on(month, 23).setDefaultInflow(340),
             Day.on(month, 24).setDefaultInflow(310),
             Day.on(month, 25).setDefaultInflow(335),
-            Day.on(month, 26).setDefaultInflow(320)
+            Day.on(month, 26).setDefaultInflow(320),
+            Day.on(month, 27).setDefaultInflow(255),
+            Day.on(month, 28).setDefaultInflow(120).setDefaultOutflow(500),
+            Day.on(month, 29).setDefaultInflow(215),
+            Day.on(month, 30).setDefaultInflow(180),
+            Day.on(month, 31).setDefaultInflow(660)
         );
     }
 

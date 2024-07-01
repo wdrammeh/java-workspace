@@ -26,9 +26,13 @@ public class Main {
         Records.addMayData(may);
         System.out.println(may.getStatement());
 
+        final Month jun = new Month("June", 2024, 3000, .2);
+        Records.addJunData(jun);
+        System.out.println(jun.getStatement());
+
         // 
         final Year year = new Year(2024);
-        year.setMonths(jan, feb, mar, apr, may);
+        year.setMonths(jan, feb, mar, apr, may, jun);
         System.out.println(year.getStatement());
     }
 
