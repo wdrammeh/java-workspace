@@ -2,6 +2,7 @@ package dps3;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.text.NumberFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -25,6 +26,10 @@ public class Utils {
 
         final BigDecimal bigDecimal = BigDecimal.valueOf(value);
         return bigDecimal.setScale(places, RoundingMode.HALF_UP).doubleValue();
+    }
+
+    public static String numberFormat(Number number) {
+        return NumberFormat.getNumberInstance().format(number);
     }
 
 }

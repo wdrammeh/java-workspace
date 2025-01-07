@@ -1,40 +1,170 @@
-package dps3;
+package dps3.x2024;
 
-public class Records {
+import dps3.Day;
+import dps3.Month;
+
+public class Record {
+
+    public static void addDecData(Month month) {
+        month.setDays(
+            Day.on(month, 1).setDefaultInflow(105).setDefaultOutflow(500),
+            Day.on(month, 2).setDefaultInflow(300),
+            Day.on(month, 3).setDefaultInflow(350),
+            Day.on(month, 4).setDefaultInflow(390),
+            Day.on(month, 5).setDefaultInflow(325),
+            Day.on(month, 6).setDefaultInflow(400),
+            Day.on(month, 7).setDefaultInflow(55),
+            Day.on(month, 8).setDefaultInflow(255),
+            Day.on(month, 9).setDefaultInflow(360),
+            Day.on(month, 10).setDefaultInflow(500),
+            Day.on(month, 11).setDefaultInflow(360),
+            Day.on(month, 12).setDefaultInflow(435).setDefaultOutflow(500),
+            Day.on(month, 13).setDefaultInflow(345),
+            Day.on(month, 14).setDefaultInflow(50),
+            Day.on(month, 15).setDefaultInflow(345),
+            Day.on(month, 16).setDefaultInflow(230),
+            Day.on(month, 17).setDefaultInflow(335),
+            Day.on(month, 18).setDefaultInflow(400),
+            Day.on(month, 19).setDefaultInflow(375).setDefaultOutflow(400),
+            Day.on(month, 20).setDefaultInflow(135),
+            Day.on(month, 21).setDefaultInflow(270),
+            Day.on(month, 22).setDefaultInflow(375),
+            // Day.on(month, 23).setDefaultInflow(),
+            Day.on(month, 24).setDefaultInflow(310),
+            Day.on(month, 25).setDefaultInflow(385),
+            Day.on(month, 26).setDefaultInflow(235),
+            Day.on(month, 27).setDefaultInflow(180),
+            Day.on(month, 28).setDefaultInflow(145).setDefaultOutflow(500),
+            Day.on(month, 29).setDefaultInflow(155),
+            Day.on(month, 30).setDefaultInflow(215),
+            Day.on(month, 31).setDefaultInflow(230)
+        );
+    }
+
+    public static void addNovData(Month month) {
+        month.setDays(
+            Day.on(month, 1).setDefaultInflow(215),
+            // Day.on(month, 2).setDefaultInflow(),
+            Day.on(month,3).setDefaultInflow(170),
+            Day.on(month, 4).setDefaultInflow(200),
+            Day.on(month, 5).setDefaultInflow(315).setDefaultOutflow(500),
+            Day.on(month, 6).setDefaultInflow(240),
+            Day.on(month, 7).setDefaultInflow(270),
+            Day.on(month, 8).setDefaultInflow(300),
+            Day.on(month, 9).setDefaultInflow(225),
+            Day.on(month, 10).setDefaultInflow(260),
+            Day.on(month, 11).setDefaultInflow(330),
+            Day.on(month, 12).setDefaultInflow(345),
+            Day.on(month, 13).setDefaultInflow(280),
+            Day.on(month, 14).setDefaultInflow(315).setDefaultOutflow(500),
+            Day.on(month, 15).setDefaultInflow(205),
+            // Day.on(month, 16).setDefaultInflow(),
+            Day.on(month, 17).setDefaultInflow(265),
+            Day.on(month, 18).setDefaultInflow(365),
+            Day.on(month, 19).setDefaultInflow(365),
+            Day.on(month, 29).setDefaultInflow(330),
+            Day.on(month, 21).setDefaultInflow(350),
+            Day.on(month, 22).setDefaultInflow(340),
+            Day.on(month, 23).setDefaultInflow(345).setDefaultOutflow(500),
+            Day.on(month, 24).setDefaultInflow(345),
+            Day.on(month, 25).setDefaultInflow(335),
+            Day.on(month, 26).setDefaultInflow(210),
+            Day.on(month, 27).setDefaultInflow(360),
+            Day.on(month, 28).setDefaultInflow(400),
+            Day.on(month, 29).setDefaultInflow(320),
+            Day.on(month, 30).setDefaultInflow(420)
+        );
+    }
+
+    public static void addOctData(Month month) {
+        month.setDays(
+            Day.on(month, 1).setDefaultInflow(310),
+            Day.on(month, 2).setDefaultInflow(340),
+            Day.on(month,3).setDefaultInflow(340),
+            Day.on(month, 4).setDefaultInflow(370),
+            // Day.on(month, 5).setDefaultInflow(0),
+            Day.on(month, 6).setDefaultInflow(85),
+            Day.on(month, 7).setDefaultInflow(100),
+            Day.on(month, 8).setDefaultInflow(305).setDefaultOutflow(500),
+            Day.on(month, 9).setDefaultInflow(140),
+            Day.on(month, 10).setDefaultInflow(315),
+            Day.on(month, 11).setDefaultInflow(385),
+            // Day.on(month, 12).setDefaultInflow(0),
+            Day.on(month, 13).setDefaultInflow(210),
+            Day.on(month, 14).setDefaultInflow(445),
+            Day.on(month, 15).setDefaultInflow(300),
+            Day.on(month, 16).setDefaultInflow(245),
+            Day.on(month, 17).setDefaultInflow(315),
+            Day.on(month, 18).setDefaultInflow(430),
+            Day.on(month, 19).setDefaultInflow(105).setDefaultOutflow(500),
+            Day.on(month, 20).setDefaultInflow(255),
+            // 
+            Day.on(month, 30).setDefaultInflow(350),
+            Day.on(month, 31).setDefaultInflow(180)
+        );
+    }
+
+    public static void addSepData(Month month) {
+        month.setDays(
+            Day.on(month, 1).setDefaultInflow(225),
+            Day.on(month, 2).setDefaultInflow(215),
+            Day.on(month, 3).setDefaultInflow(415),
+            Day.on(month, 4).setDefaultInflow(305),
+            Day.on(month, 5).setDefaultInflow(310),
+            Day.on(month, 6).setDefaultInflow(320),
+            Day.on(month, 7).setDefaultInflow(310),
+            Day.on(month, 8).setDefaultInflow(275).setDefaultOutflow(500),
+            Day.on(month, 9).setDefaultInflow(320),
+            Day.on(month, 10).setDefaultInflow(260),
+            Day.on(month, 11).setDefaultInflow(105),
+            Day.on(month, 12).setDefaultInflow(35),
+            Day.on(month, 13).setDefaultInflow(110),
+            Day.on(month, 14).setDefaultInflow(125),
+            Day.on(month, 15).setDefaultInflow(310),
+            Day.on(month, 16).setDefaultInflow(165),
+            Day.on(month, 17).setDefaultInflow(305),
+            Day.on(month, 18).setDefaultInflow(75),
+            Day.on(month, 19).setDefaultInflow(85),
+            // Day.on(month, 20).setDefaultInflow(),
+            Day.on(month, 21).setDefaultInflow(120),
+            Day.on(month, 22).setDefaultInflow(310),
+            Day.on(month, 23).setDefaultInflow(200),
+            Day.on(month, 24).setDefaultInflow(305),
+            Day.on(month, 25).setDefaultInflow(205),
+            Day.on(month, 26).setDefaultInflow(290).setDefaultOutflow(500),
+            Day.on(month, 27).setDefaultInflow(300),
+            Day.on(month, 28).setDefaultInflow(320),
+            Day.on(month, 29).setDefaultInflow(305),
+            Day.on(month, 30).setDefaultInflow(150)
+        );
+    }
 
     public static void addAugData(Month month) {
         month.setDays(
             Day.on(month, 1).setDefaultInflow(445),
             Day.on(month, 2).setDefaultInflow(370),
-            // Day.on(month, 3).setDefaultInflow(),
-            // Day.on(month, 4).setDefaultInflow(),
+            // 
             Day.on(month, 5).setDefaultInflow(435),
             Day.on(month, 6).setDefaultInflow(335),
             Day.on(month, 7).setDefaultInflow(515),
             Day.on(month, 8).setDefaultInflow(430),
-            Day.on(month, 9).setDefaultInflow(355)
-            // Day.on(month, 10).setDefaultInflow().setDefaultOutflow(500),
-            // Day.on(month, 11).setDefaultInflow(),
-            // Day.on(month, 12).setDefaultInflow(),
-            // Day.on(month, 13).setDefaultInflow(),
-            // Day.on(month, 14).setDefaultInflow(),
-            // Day.on(month, 15).setDefaultInflow(),
-            // Day.on(month, 16).setDefaultInflow(),
-            // Day.on(month, 17).setDefaultInflow(),
-            // Day.on(month, 18).setDefaultInflow(),
-            // Day.on(month, 19).setDefaultInflow(),
-            // Day.on(month, 20).setDefaultInflow(),
-            // Day.on(month, 21).setDefaultInflow(),
-            // Day.on(month, 22).setDefaultInflow(),
-            // Day.on(month, 23).setDefaultInflow(),
-            // Day.on(month, 24).setDefaultInflow(),
-            // Day.on(month, 25).setDefaultInflow(),
-            // Day.on(month, 26).setDefaultInflow(),
+            Day.on(month, 9).setDefaultInflow(355),
+            Day.on(month, 10).setDefaultInflow(360).setDefaultOutflow(500),
+            Day.on(month, 11).setDefaultInflow(390),
+            Day.on(month, 12).setDefaultInflow(215),
+            // 
+            Day.on(month, 20).setDefaultInflow(325),
+            Day.on(month, 21).setDefaultInflow(240),
+            Day.on(month, 22).setDefaultInflow(310),
+            Day.on(month, 23).setDefaultInflow(335),
+            Day.on(month, 24).setDefaultInflow(355),
+            Day.on(month, 25).setDefaultInflow(280),
+            Day.on(month, 26).setDefaultInflow(315).setDefaultOutflow(500),
             // Day.on(month, 27).setDefaultInflow(),
-            // Day.on(month, 28).setDefaultInflow(),
-            // Day.on(month, 29).setDefaultInflow(),
-            // Day.on(month, 30).setDefaultInflow(),
-            // Day.on(month, 31).setDefaultInflow()
+            Day.on(month, 28).setDefaultInflow(330),
+            Day.on(month, 29).setDefaultInflow(170),
+            Day.on(month, 30).setDefaultInflow(270),
+            Day.on(month, 31).setDefaultInflow(315)
         );
     }
 
@@ -243,8 +373,7 @@ public class Records {
             Day.on(month, 23).setDefaultInflow(525),
             Day.on(month, 24).setDefaultInflow(445),
             Day.on(month, 25).setDefaultInflow(440).setDefaultOutflow(300),
-            // Day.on(feb, 26).setDefaultInflow(0),
-            // Day.on(feb, 27).setDefaultInflow(0),
+            // 
             Day.on(month, 28).setDefaultInflow(510),
             Day.on(month, 29).setDefaultInflow(390)
         );

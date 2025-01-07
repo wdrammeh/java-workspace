@@ -1,5 +1,7 @@
 package dps3;
 
+import static dps3.Utils.numberFormat;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.StringJoiner;
@@ -112,10 +114,6 @@ public class Month {
         return rent + wage() + totalDailyOutflow() + totalExtraOutflow();
     }
 
-    public double netProfit() {
-        return totalRevenue() - totalExpense();
-    }
-
     public String getDisplayName() {
         return String.format("%s %s", name, year);
     }
@@ -137,6 +135,10 @@ public class Month {
         return total;
     }
 
+    public double netProfit() {
+        return totalRevenue() - totalExpense();
+    }
+
     public double avgDailyInflow() {
         return Utils.round(totalRevenue() / days.size(), 2);
     }
@@ -144,13 +146,13 @@ public class Month {
     public String getStatement() {
         final StringJoiner joiner = new StringJoiner("\n");
         joiner.add(String.format("[ %s ]", getDisplayName()))
-                .add(String.format("Total Revenue: %s", totalRevenue()))
-                .add(String.format("Rent Fee: %s", getRent()))
-                .add(String.format("Cash Power: %s", totalCashPowerCost()))
-                .add(String.format("Wage (%s): %s", wagePercentage, wage()))
-                .add(String.format("Total Expense: %s", totalExpense()))
-                // .add(String.format("Avg. Daily Income: %s", avgDailyInflow()))
-                .add(String.format("Net Profit: %s", netProfit()))
+                .add(String.format("Total Revenue: %s", numberFormat(totalRevenue())))
+                .add(String.format("Rent Fee: %s", numberFormat(getRent())))
+                .add(String.format("Cash Power: %s", numberFormat(totalCashPowerCost())))
+                .add(String.format("Wage (%s): %s", wagePercentage, numberFormat(wage())))
+                .add(String.format("Total Expense: %s", numberFormat(totalExpense())))
+                .add(String.format("Avg. Daily Income: %s", numberFormat(avgDailyInflow())))
+                .add(String.format("Net Profit: %s", numberFormat(netProfit())))
                 .add("");
         return joiner.toString();
     }
